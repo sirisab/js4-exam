@@ -13,7 +13,7 @@ beforeEach(() => {
   render(<ArtworksPage />);
 });
 
-describe('Artworks', () => {
+describe('ArtworksPage', () => {
   // It beskriver testet
   it('should have a correct heading', () => {
     //Act:
