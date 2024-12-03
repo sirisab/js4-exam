@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const Artworks = () => {
+export const ArtworksPage = () => {
   const [buttonText, setButtonText] = useState<string>('Login');
   return (
     <>

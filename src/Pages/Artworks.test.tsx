@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Artworks } from './Artworks';
+import { ArtworksPage } from './ArtworksPage';
 
 // Describe beskriver testets syfte
 // Steg 1. Skapa en testsvit:
@@ -10,7 +10,7 @@ import { Artworks } from './Artworks';
 //Instansierar Artworks-komponenten
 
 beforeEach(() => {
-  render(<Artworks />);
+  render(<ArtworksPage />);
 });
 
 describe('Artworks', () => {
