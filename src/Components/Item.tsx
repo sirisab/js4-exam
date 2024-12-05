@@ -7,8 +7,8 @@ export const Item = ({ artwork }: { artwork: IArtwork }) => {
     <section className={styles.card}>
       <img src={img} alt={artwork.title} />
       <div className={styles['card-body']}>
-        <h5></h5>
-        <small className={styles['text-muted']}>{artwork.price}</small>
+        <h5>{artwork.title}</h5>
+        <small className={styles['text-muted']}>{artwork.price} kr</small>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 .card {
   background: var(--card-background-color);
-  padding: 0.4rem;
+  padding: 0.2rem;
   transition: transform 0.2s;
   border-radius: 10px;
 }
@@ -8,7 +8,7 @@
   width: 100%;
 }
 .card-body {
-  padding: 0.7rem;
+  padding: 0.4rem;
   font-size: 1.25rem;
 }
 
