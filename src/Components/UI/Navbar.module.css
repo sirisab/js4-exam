@@ -1,3 +1,6 @@
 .navbar {
   background-color: darkgray;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
