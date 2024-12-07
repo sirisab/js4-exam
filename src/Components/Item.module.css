@@ -1,6 +1,6 @@
 .card {
   background: var(--card-background-color);
-  padding: 0.2rem;
+  /* padding: 0.2rem; */
   transition: transform 0.2s;
   border-radius: 10px;
 }
@@ -13,6 +13,6 @@
 }
 
 .card:hover {
-  transform: scale(1.05);
-  background: #3e3e41;
+  transform: scale(1.02);
+  background: #7084a5;
 }
