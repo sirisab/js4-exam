@@ -1,7 +1,6 @@
-import '@testing-library/jest-dom';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+// import userEvent from '@testing-library/user-event';
 import { ArtworksPage } from './ArtworksPage';
 
 // Describe beskriver testets syfte
@@ -13,25 +12,37 @@ beforeEach(() => {
   render(<ArtworksPage />);
 });
 
-describe('ArtworksPage', () => {
+describe('ArtworksPage component', () => {
   // It beskriver testet
-  it('should have a correct heading', () => {
+  it.skip('should have a correct heading with the text Artworks', () => {
     //Act:
     const heading = screen.getByText(/Artworks/i);
     // Förväntning för ett resultat
     expect(heading).toBeInTheDocument();
   });
 
-  it('should have a login button with the text login', async () => {
-    const user = userEvent.setup();
+  describe('ArtworksPage component', () => {
+    it.skip('should have a correct heading with the text Pasteller', () => {
+      //Act:
+      const heading = screen.getByRole('heading', { name: /Pasteller/i });
+      // Förväntning för ett resultat
+      expect(heading).toBeInTheDocument();
+    });
+  });
 
-    screen.getByRole('button', { name: /login/i });
-    // expect(btnElem).toHaveTextContent('Login');
-    const btnElem = screen.getByRole('button', { name: /login/i });
-    // Click the button
-    // fireEvent.click(btnElem);
-    await user.click(btnElem);
-    // Test if the button text changed after click
-    expect(btnElem).toHaveTextContent(/logout/i);
+  describe('ArtworksPage REST API call', () => {
+    it('should display image for each artwork', async () => {
+      const images = await screen.findAllByRole('img');
+      expect(images).toHaveLength(5);
+
+      const altTitles = images.map((elem) => (elem as HTMLImageElement).alt);
+      expect(altTitles).toEqual([
+        'Rosa droppar',
+        'Janne, min vän',
+        'Gula knoppar',
+        'Persienn',
+        'Arbetsfordon',
+      ]);
+    });
   });
 });

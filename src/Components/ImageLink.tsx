@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 type ImageLinkProps = {
   imageSrc: string;
   altText: string;
-  href: string;
+  href: number;
 };
 
 const ImageLink = ({ imageSrc, altText, href }: ImageLinkProps) => {

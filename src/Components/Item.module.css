@@ -1,11 +1,12 @@
 .card {
   background: var(--card-background-color);
-  /* padding: 0.2rem; */
-  transition: transform 0.2s;
+  padding: 0.2rem;
+  /* transition: transform 0.2s; */
   border-radius: 10px;
 }
+
 .card img {
-  width: 100%;
+  width: 235px;
 }
 .card-body {
   padding: 0.4rem;
@@ -14,5 +15,8 @@
 
 .card:hover {
   transform: scale(1.02);
-  background: #7084a5;
+}
+
+.text {
+  font-size: 12px;
 }

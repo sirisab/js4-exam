@@ -1,6 +1,12 @@
 .navbar {
-  background-color: darkgray;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  background-color: rgb(135, 177, 239);
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 1em 3em;
+}
+
+a {
+  color: #242424;
 }

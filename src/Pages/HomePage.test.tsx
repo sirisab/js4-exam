@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom';
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
-
 import { HomePage } from './HomePage';
 
 // Describe beskriver testets syfte
