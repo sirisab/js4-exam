@@ -3,6 +3,7 @@ export interface IArtwork {
   title: string;
   price: number;
   description: string;
+  dimensions: string;
   imageUrlLarge: string;
   imageUrlSmall: string;
   inStock: number;

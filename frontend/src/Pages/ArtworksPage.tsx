@@ -17,7 +17,7 @@ export const ArtworksPage = () => {
 
   return (
     <main>
-      <Header title='Pasteller' />
+      {/* <Header title='Pasteller' /> */}
       <GridList artworks={artworks} />
     </main>
   );

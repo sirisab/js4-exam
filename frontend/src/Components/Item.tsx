@@ -6,10 +6,14 @@ export const Item = ({ artwork }: { artwork: IArtwork }) => {
 
   return (
     <section className={styles.card}>
-      <ImageLink href={artwork.id} imageSrc={img} altText={artwork.title} />
+      <ImageLink
+        href={`/artworks/${artwork.id}`}
+        imageSrc={img}
+        altText={artwork.title}
+      />
       <div className={styles['card-body']}>
         <h5>{artwork.title}</h5>
-        <small className={styles['text']}>{artwork.price} kr</small>
+        <small className={styles.text}>{artwork.price} kr</small>
       </div>
     </section>
   );

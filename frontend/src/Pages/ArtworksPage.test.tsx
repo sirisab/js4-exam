@@ -33,7 +33,7 @@ describe('ArtworksPage component', () => {
   describe('ArtworksPage REST API call', () => {
     it('should display image for each artwork', async () => {
       const images = await screen.findAllByRole('img');
-      expect(images).toHaveLength(5);
+      expect(images).toHaveLength(8);
 
       const altTitles = images.map((elem) => (elem as HTMLImageElement).alt);
       expect(altTitles).toEqual([
@@ -42,6 +42,9 @@ describe('ArtworksPage component', () => {
         'Gula knoppar',
         'Persienn',
         'Arbetsfordon',
+        'Arbetsborste',
+        'Skymningsspegling',
+        'Utsikt',
       ]);
     });
   });

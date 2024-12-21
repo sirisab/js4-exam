@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 type ImageLinkProps = {
   imageSrc: string;
   altText: string;
-  href: number;
+  href: string;
 };
 
 const ImageLink = ({ imageSrc, altText, href }: ImageLinkProps) => {
   return (
-    <NavLink to={href}>
+    <NavLink to={`${href}`}>
       <img src={imageSrc} alt={altText} />
     </NavLink>
   );
