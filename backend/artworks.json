@@ -6,6 +6,7 @@
       "title": "Rosa droppar",
       "price": 2500,
       "description": "Torrpastell. 15 x 15 cm",
+      "dimensions": "15 x 15 cm",
       "imageUrlSmall": "201230_small.JPG",
       "imageUrlLarge": "201230.JPG",
       "inStock": 1
@@ -14,7 +15,8 @@
       "id": "2",
       "title": "Janne, min vän",
       "price": 2500,
-      "description": "Pan Pastel och torrpastell. 15 x 15 cm",
+      "description": "Pan Pastel och torrpastell",
+      "dimensions": "15 x 15 cm",
       "imageUrlSmall": "210428_small.JPG",
       "imageUrlLarge": "210428.JPG",
       "inStock": 1
@@ -23,7 +25,8 @@
       "id": "3",
       "title": "Gula knoppar",
       "price": 2500,
-      "description": "Pan Pastel & torrpastell. 15 x 15 cm",
+      "description": "Pan Pastel & torrpastell",
+      "dimensions": "15 x 15 cm",
       "imageUrlSmall": "210512a_small.JPG",
       "imageUrlLarge": "210512a.JPG",
       "inStock": 1
@@ -32,7 +35,8 @@
       "id": "4",
       "title": "Persienn",
       "price": 2500,
-      "description": "Torrpastell. 15 x 15 cm",
+      "description": "Torrpastell",
+      "dimensions": "15 x 15 cm",
       "imageUrlSmall": "210512b_small.JPG",
       "imageUrlLarge": "210512b.JPG",
       "inStock": 1
@@ -41,7 +45,8 @@
       "id": "5",
       "title": "Arbetsfordon",
       "price": 4000,
-      "description": "Pan Pastel. 25 x 25 cm",
+      "description": "Pan Pastel",
+      "dimensions": "25 x 25 cm",
       "imageUrlSmall": "210923_small.JPG",
       "imageUrlLarge": "210923.JPG",
       "inStock": 0
@@ -50,7 +55,8 @@
       "id": "6",
       "title": "Arbetsborste",
       "price": 2500,
-      "description": "Pan Pastel. 15 x 15 cm",
+      "description": "Pan Pastel",
+      "dimensions": "15 x 15 cm",
       "imageUrlSmall": "210517_small.JPG",
       "imageUrlLarge": "210517.JPG",
       "inStock": 1
@@ -59,7 +65,8 @@
       "id": "7",
       "title": "Skymningsspegling",
       "price": 4000,
-      "description": "Pan Pastel. 25 x 25 cm",
+      "description": "Torrpastell",
+      "dimensions": "25 x 25 cm",
       "imageUrlSmall": "210518_small.JPG",
       "imageUrlLarge": "210518.JPG",
       "inStock": 0
@@ -68,7 +75,8 @@
       "id": "8",
       "title": "Utsikt",
       "price": 2500,
-      "description": "Pan Pastel. 15 x 15 cm",
+      "description": "Torrpastell",
+      "dimensions": "15 x 15 cm",
       "imageUrlSmall": "210602_small.JPG",
       "imageUrlLarge": "210602.JPG",
       "inStock": 0
