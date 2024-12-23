@@ -45,6 +45,7 @@ h2 {
 h5 {
   margin: 0.1rem;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -79,4 +80,13 @@ main {
   button {
     background-color: #f9f9f9;
   }
+}
+
+footer {
+  height: 40px;
+  background-color: rgb(135, 177, 239);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

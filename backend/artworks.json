@@ -47,8 +47,8 @@
       "price": 4000,
       "description": "Pan Pastel",
       "dimensions": "25 x 25 cm",
-      "imageUrlSmall": "210923_small.JPG",
-      "imageUrlLarge": "210923.JPG",
+      "imageUrlSmall": "210923a_small.JPG",
+      "imageUrlLarge": "210923a.JPG",
       "inStock": 0
     },
     {
@@ -80,6 +80,26 @@
       "imageUrlSmall": "210602_small.JPG",
       "imageUrlLarge": "210602.JPG",
       "inStock": 0
+    },
+    {
+      "id": "9",
+      "title": "Nattblad",
+      "price": 4000,
+      "description": "Pan Pastel",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "210923b_small.JPG",
+      "imageUrlLarge": "210923b.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "10",
+      "title": "Gul fasad",
+      "price": 2500,
+      "description": "Torrpastell",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "201120_small.JPG",
+      "imageUrlLarge": "201120.JPG",
+      "inStock": 1
     }
   ]
 }
