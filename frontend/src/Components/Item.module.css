@@ -3,11 +3,10 @@
   padding: 0.2rem;
   /* transition: transform 0.2s; */
   border-radius: 10px;
-  text-align: left;
 }
 
 .card img {
-  width: 235px;
+  min-width: 235px;
 }
 .card-body {
   padding: 0.4rem 0rem;

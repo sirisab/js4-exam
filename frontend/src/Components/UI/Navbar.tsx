@@ -5,7 +5,10 @@ import { HiMiniShoppingBag } from 'react-icons/hi2';
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <NavLink to='/'>Pastel shop</NavLink>
+      <NavLink to='/'>
+        <h1>Pastel shop</h1>
+      </NavLink>
+
       <NavLink to='/shoppingcart'>
         <HiMiniShoppingBag size={30} />
       </NavLink>

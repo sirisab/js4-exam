@@ -1,3 +1,7 @@
 export const Header = ({ title }: { title: string }) => {
-  return <h1>{title}</h1>;
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
 };

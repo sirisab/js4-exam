@@ -18,8 +18,8 @@ export const ArtworkPage = () => {
   }, [id]);
 
   return (
-    <main>
+    <>
       <ArtworkDetails artwork={artwork!} />
-    </main>
+    </>
   );
 };

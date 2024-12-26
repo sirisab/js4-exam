@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Header } from '../Components/UI/Header';
 import { IArtwork } from '../Models/IArtwork';
 import { GridList } from '../Components/GridList';
 import { LoadArtworks } from '../Utilities/LoadArtworks';
@@ -16,9 +15,8 @@ export const ArtworksPage = () => {
   };
 
   return (
-    <main>
-      {/* <Header title='Pasteller' /> */}
+    <>
       <GridList artworks={artworks} />
-    </main>
+    </>
   );
 };
