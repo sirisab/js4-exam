@@ -6,5 +6,6 @@ export interface IArtwork {
   dimensions: string;
   imageUrlLarge: string;
   imageUrlSmall: string;
+  imageUrlThumbnail: string;
   inStock: number;
 }

@@ -10,6 +10,7 @@ import MainLayout from './Layouts/MainLayout';
 import { ArtworksPage } from './Pages/ArtworksPage';
 import { ArtworkPage } from './Pages/ArtworkPage';
 import NotFoundPage from './Pages/NotFoundPage';
+import { ShoppingcartPage } from './Pages/ShoppingcartPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route index element={<ArtworksPage />} />
       <Route path='/artworks' element={<ArtworksPage />} />
       <Route path='/artworks/:id' element={<ArtworkPage />} />
+      <Route path='/shoppingcart' element={<ShoppingcartPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Route>
   )

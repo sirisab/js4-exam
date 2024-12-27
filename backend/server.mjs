@@ -3,7 +3,8 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
-import artworks from './routes/artworks-routes.mjs';
+import artworksRoutes from './routes/artworks-routes.mjs';
+import shoppingcartRoutes from './routes/shoppingcart-routes.mjs';
 
 // Starta upp tillgång till .env-filens konfig:
 dotenv.config();
@@ -18,6 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use('/api/artworks', artworks);
+app.use('/api/artworks', artworksRoutes);
+app.use('/api/shoppingcart', shoppingcartRoutes);
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

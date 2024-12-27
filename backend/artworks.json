@@ -1,16 +1,5 @@
 {
-  "shoppingCart": [{}],
-  "artworks": [
-    {
-      "id": "1",
-      "title": "Rosa droppar",
-      "price": 2500,
-      "description": "Torrpastell. 15 x 15 cm",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "201230_small.JPG",
-      "imageUrlLarge": "201230.JPG",
-      "inStock": 1
-    },
+  "shoppingcart": [
     {
       "id": "2",
       "title": "Janne, min vän",
@@ -19,76 +8,7 @@
       "dimensions": "15 x 15 cm",
       "imageUrlSmall": "210428_small.JPG",
       "imageUrlLarge": "210428.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "3",
-      "title": "Gula knoppar",
-      "price": 2500,
-      "description": "Pan Pastel & torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210512a_small.JPG",
-      "imageUrlLarge": "210512a.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "4",
-      "title": "Persienn",
-      "price": 2500,
-      "description": "Torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210512b_small.JPG",
-      "imageUrlLarge": "210512b.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "5",
-      "title": "Arbetsfordon",
-      "price": 4000,
-      "description": "Pan Pastel",
-      "dimensions": "25 x 25 cm",
-      "imageUrlSmall": "210923a_small.JPG",
-      "imageUrlLarge": "210923a.JPG",
-      "inStock": 0
-    },
-    {
-      "id": "6",
-      "title": "Arbetsborste",
-      "price": 2500,
-      "description": "Pan Pastel",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210517_small.JPG",
-      "imageUrlLarge": "210517.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "7",
-      "title": "Skymningsspegling",
-      "price": 4000,
-      "description": "Torrpastell",
-      "dimensions": "25 x 25 cm",
-      "imageUrlSmall": "210518_small.JPG",
-      "imageUrlLarge": "210518.JPG",
-      "inStock": 0
-    },
-    {
-      "id": "8",
-      "title": "Utsikt",
-      "price": 2500,
-      "description": "Torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210602_small.JPG",
-      "imageUrlLarge": "210602.JPG",
-      "inStock": 0
-    },
-    {
-      "id": "9",
-      "title": "Nattblad",
-      "price": 4000,
-      "description": "Pan Pastel",
-      "dimensions": "25 x 25 cm",
-      "imageUrlSmall": "210923b_small.JPG",
-      "imageUrlLarge": "210923b.JPG",
+      "imageUrlThumbnail": "210428_thumbnail.JPG",
       "inStock": 1
     },
     {
@@ -99,6 +19,119 @@
       "dimensions": "25 x 25 cm",
       "imageUrlSmall": "201120_small.JPG",
       "imageUrlLarge": "201120.JPG",
+      "imageUrlThumbnail": "201120_thumbnail.JPG",
+      "inStock": 1
+    }
+  ],
+  "artworks": [
+    {
+      "id": "1",
+      "title": "Rosa droppar",
+      "price": 2500,
+      "description": "Torrpastell. 15 x 15 cm",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "201230_small.JPG",
+      "imageUrlLarge": "201230.JPG",
+      "imageUrlThumbnail": "201230_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "2",
+      "title": "Janne, min vän",
+      "price": 2500,
+      "description": "Pan Pastel och torrpastell",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "210428_small.JPG",
+      "imageUrlLarge": "210428.JPG",
+      "imageUrlThumbnail": "210428_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "3",
+      "title": "Gula knoppar",
+      "price": 2500,
+      "description": "Pan Pastel & torrpastell",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "210512a_small.JPG",
+      "imageUrlLarge": "210512a.JPG",
+      "imageUrlThumbnail": "210512a_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "4",
+      "title": "Persienn",
+      "price": 2500,
+      "description": "Torrpastell",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "210512b_small.JPG",
+      "imageUrlLarge": "210512b.JPG",
+      "imageUrlThumbnail": "210512b_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "5",
+      "title": "Arbetsfordon",
+      "price": 4000,
+      "description": "Pan Pastel",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "210923a_small.JPG",
+      "imageUrlLarge": "210923a.JPG",
+      "imageUrlThumbnail": "210923a_thumbnail.JPG",
+      "inStock": 0
+    },
+    {
+      "id": "6",
+      "title": "Arbetsborste",
+      "price": 2500,
+      "description": "Pan Pastel",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "210517_small.JPG",
+      "imageUrlLarge": "210517.JPG",
+      "imageUrlThumbnail": "210517_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "7",
+      "title": "Skymningsspegling",
+      "price": 4000,
+      "description": "Torrpastell",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "210518_small.JPG",
+      "imageUrlLarge": "210518.JPG",
+      "imageUrlThumbnail": "210518_thumbnail.JPG",
+      "inStock": 0
+    },
+    {
+      "id": "8",
+      "title": "Utsikt",
+      "price": 2500,
+      "description": "Torrpastell",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "210602_small.JPG",
+      "imageUrlLarge": "210602.JPG",
+      "imageUrlThumbnail": "210602_thumbnail.JPG",
+      "inStock": 0
+    },
+    {
+      "id": "9",
+      "title": "Nattblad",
+      "price": 4000,
+      "description": "Pan Pastel",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "210923b_small.JPG",
+      "imageUrlLarge": "210923b.JPG",
+      "imageUrlThumbnail": "210923b_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "10",
+      "title": "Gul fasad",
+      "price": 2500,
+      "description": "Torrpastell",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "201120_small.JPG",
+      "imageUrlLarge": "201120.JPG",
+      "imageUrlThumbnail": "201120_thumbnail.JPG",
       "inStock": 1
     }
   ]
