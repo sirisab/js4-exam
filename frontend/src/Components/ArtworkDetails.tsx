@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { IArtwork } from '../Models/IArtwork';
+import { PostToShoppingcart } from '../Utilities/PostToShoppingcart';
 import styles from './ArtworkDetails.module.css';
 import { RiPlayLargeFill } from 'react-icons/ri';
 import { RiPlayReverseLargeFill } from 'react-icons/ri';
