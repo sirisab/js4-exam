@@ -1,5 +1,6 @@
 import { IArtwork } from '../Models/IArtwork';
 import styles from './ShoppingcartList.module.css';
+import { ShoppingcartListItem } from './ShoppingcartListItem';
 interface ShoppingcartListProps {
   cartItems: IArtwork[];
 }
@@ -7,18 +8,14 @@ interface ShoppingcartListProps {
 export const ShoppingcartList = ({ cartItems }: ShoppingcartListProps) => {
   return (
     <>
-      <h4>Lista:</h4>
-
-      {cartItems?.map((cartItem) => (
-        <section>
-          <div key={cartItem?.id}>
-            <img
-              src={`http://localhost:5173/drawings/${cartItem.imageUrlThumbnail}`}
-            />
-            {cartItem?.title} {cartItem?.price}
-          </div>
-        </section>
-      ))}
+      <div className={styles['cart-list']}>
+        {cartItems?.map((cartItem) => (
+          <ShoppingcartListItem cartItem={cartItem} />
+        ))}
+      </div>
+      <div className={styles['cart-list']}>
+        Summa: {cartItems?.map((cartItem) => +cartItem.price)}
+      </div>
     </>
   );
 };

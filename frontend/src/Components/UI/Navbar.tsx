@@ -10,7 +10,7 @@ const Navbar = () => {
       </NavLink>
 
       <NavLink to='/shoppingcart'>
-        <HiMiniShoppingBag size={30} />
+        <HiMiniShoppingBag className={styles.badge} size={30} />
       </NavLink>
     </nav>
   );

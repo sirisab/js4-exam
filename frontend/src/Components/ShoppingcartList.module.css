@@ -1,0 +1,8 @@
+.cart-list {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
+  margin: 0 auto;
+}

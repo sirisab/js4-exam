@@ -4,23 +4,25 @@ import { PostToShoppingcart } from '../Utilities/PostToShoppingcart';
 import styles from './ArtworkDetails.module.css';
 import { RiPlayLargeFill } from 'react-icons/ri';
 import { RiPlayReverseLargeFill } from 'react-icons/ri';
+import { useEffect, useState } from 'react';
 
 const ArtworkDetails = ({ artwork }: { artwork: IArtwork }) => {
-  // const [buttonClass, setButtonClass] = useState<string>('active-btn');
-  // const [buttonText, setButtonText] = useState<string>('Lägg i varukorgen');
+  const [buttonClass, setButtonClass] = useState<string>('active-btn');
+  const [buttonText, setButtonText] = useState<string>('Lägg i varukorgen');
 
-  // const handleClick = () => {
-  //   setButtonClass(
-  //     buttonClass === 'active-btn' ? 'active-btn' : 'inactive-btn'
-  //   );
-  //   setButtonText(
-  //     buttonClass === 'active-btn' ? 'Ligger i varukorgen' : 'Lägg i varukorgen'
-  //   );
-  // };
+  const handleClick = () => {
+    setButtonClass(
+      buttonClass === 'active-btn' ? 'active-btn' : 'inactive-btn'
+    );
+    setButtonText(
+      buttonClass === 'active-btn' ? 'Ligger i varukorgen' : 'Lägg i varukorgen'
+    );
+    postToCart(artwork);
+  };
 
-  // useEffect(() => {
-  //   console.log(buttonClass); // Loggar det nya värdet efter att det har ändrats
-  // }, [buttonClass]);
+  const postToCart = (item: IArtwork) => {
+    PostToShoppingcart(item);
+  };
 
   return (
     <>
@@ -36,7 +38,7 @@ const ArtworkDetails = ({ artwork }: { artwork: IArtwork }) => {
           <p>{artwork?.description}</p>
           <p>{artwork?.dimensions}</p>
           <p>{artwork?.price} kr</p>
-          <button>Lägg i varukorgen</button>
+          <button onClick={handleClick}>Lägg i varukorgen</button>
         </div>
 
         <div className={styles['arrows-div']}>
