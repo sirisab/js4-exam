@@ -31,7 +31,8 @@ export const addToShoppingcart = async (req, res) => {
 export const deleteFromShoppingcart = async (req, res) => {
   console.log('DELETE-begäran mottagen på /api/shoppingcart');
 
-  const id = parseInt(req.params.id, 10);
+  const { id } = req.params;
+  const parsedId = parseInt(id, 10);
   console.log('Mottaget ID:', id);
 
   if (isNaN(id)) {
@@ -45,7 +46,7 @@ export const deleteFromShoppingcart = async (req, res) => {
   }
 
   try {
-    await fetchData('shoppingcart', {
+    await fetchData(`shoppingcart/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

@@ -11,6 +11,10 @@ export const fetchData = async (endpoint, options = {}) => {
     const response = await fetch(url, options);
 
     if (!response.ok) {
+      console.log(
+        `Error in fetchData: ${response.status} ${response.statusText}`
+      );
+
       throw new Error(
         `Det gick fel i fetchData för URL: ${url}, status: ${response.status}, ${response.statusText}`
       );
@@ -24,6 +28,8 @@ export const fetchData = async (endpoint, options = {}) => {
     return null;
   } catch (error) {
     console.error('Ett fel inträffade i fetchData:', error.mesage);
-    throw error;
+    throw new Error(
+      `Ett fel inträffade i fetchData: ${endpoint} - ${error.message}`
+    );
   }
 };

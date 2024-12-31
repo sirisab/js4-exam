@@ -23,17 +23,6 @@
       "inStock": 1
     },
     {
-      "id": "4",
-      "title": "Persienn",
-      "price": 2500,
-      "description": "Torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210512b_small.JPG",
-      "imageUrlLarge": "210512b.JPG",
-      "imageUrlThumbnail": "210512b_thumbnail.JPG",
-      "inStock": 1
-    },
-    {
       "id": "6",
       "title": "Arbetsborste",
       "price": 2500,
@@ -53,17 +42,6 @@
       "imageUrlSmall": "210923a_small.JPG",
       "imageUrlLarge": "210923a.JPG",
       "imageUrlThumbnail": "210923a_thumbnail.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "9",
-      "title": "Nattblad",
-      "price": 4000,
-      "description": "Pan Pastel",
-      "dimensions": "25 x 25 cm",
-      "imageUrlSmall": "210923b_small.JPG",
-      "imageUrlLarge": "210923b.JPG",
-      "imageUrlThumbnail": "210923b_thumbnail.JPG",
       "inStock": 1
     },
     {
