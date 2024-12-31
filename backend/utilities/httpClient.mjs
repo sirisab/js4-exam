@@ -1,17 +1,29 @@
-export const fetchData = async (endpoint) => {
+export const fetchData = async (endpoint, options = {}) => {
+  const baseUrl = process.env.BASE_URL;
+
+  if (!baseUrl) {
+    throw new Error('BASE_URL är inte definierad i miljövariabeln.');
+  }
+
   const url = `${process.env.BASE_URL}/${endpoint}`;
 
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, options);
 
-    if (response.ok) {
+    if (!response.ok) {
+      throw new Error(
+        `Det gick fel i fetchData för URL: ${url}, status: ${response.status}, ${response.statusText}`
+      );
+    }
+
+    if (response.status !== 204) {
       const result = await response.json();
       return result;
-    } else {
-      throw new Error(`Det gick fel i fetchData: ${endpoint}`);
     }
+
+    return null;
   } catch (error) {
-    console.log(error);
-    throw new Error(`Ett fel inträffade i fetchData: ${endpoint}`);
+    console.error('Ett fel inträffade i fetchData:', error.mesage);
+    throw error;
   }
 };

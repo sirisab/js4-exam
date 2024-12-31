@@ -4,7 +4,7 @@ import { PostToShoppingcart } from '../Utilities/PostToShoppingcart';
 import styles from './ArtworkDetails.module.css';
 import { RiPlayLargeFill } from 'react-icons/ri';
 import { RiPlayReverseLargeFill } from 'react-icons/ri';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const ArtworkDetails = ({ artwork }: { artwork: IArtwork }) => {
   const [buttonClass, setButtonClass] = useState<string>('active-btn');
@@ -38,6 +38,7 @@ const ArtworkDetails = ({ artwork }: { artwork: IArtwork }) => {
           <p>{artwork?.description}</p>
           <p>{artwork?.dimensions}</p>
           <p>{artwork?.price} kr</p>
+          <p>{artwork?.inStock} i lager</p>
           <button onClick={handleClick}>Lägg i varukorgen</button>
         </div>
 

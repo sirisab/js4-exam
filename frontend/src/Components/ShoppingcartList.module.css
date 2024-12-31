@@ -6,3 +6,14 @@
   gap: 1em;
   margin: 0 auto;
 }
+
+.cart-sum {
+  width: 400px;
+  padding-top: 3em;
+  text-align: right;
+  margin: 0 auto;
+}
+
+.to-register-btn {
+  align-self: end;
+}

@@ -1,10 +1,19 @@
 .cart-item {
+  width: 100%;
   display: flex;
   align-items: center;
+  gap: 2em;
 }
 
-.cart-detail {
-  width: 130px;
+.cart-title {
+  width: 8rem;
   text-align: left;
-  margin: 8px;
+}
+
+.cart-price {
+  text-align: right;
+}
+
+.delete-btn {
+  color: red;
 }

@@ -17,7 +17,7 @@
 
 a {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-decoration: inherit;
 }
 
@@ -80,7 +80,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   font-size: 12px;
 }
 

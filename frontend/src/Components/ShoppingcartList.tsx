@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { IArtwork } from '../Models/IArtwork';
 import styles from './ShoppingcartList.module.css';
 import { ShoppingcartListItem } from './ShoppingcartListItem';
@@ -9,12 +10,21 @@ export const ShoppingcartList = ({ cartItems }: ShoppingcartListProps) => {
   return (
     <>
       <div className={styles['cart-list']}>
-        {cartItems?.map((cartItem) => (
-          <ShoppingcartListItem cartItem={cartItem} />
+        {cartItems?.map((cartItem, i) => (
+          <ShoppingcartListItem key={i} cartItem={cartItem} />
         ))}
-      </div>
-      <div className={styles['cart-list']}>
-        Summa: {cartItems?.map((cartItem) => +cartItem.price)}
+        <div className={styles['cart-sum']}>
+          Summa:{' '}
+          {cartItems?.reduce((total, cartItem) => {
+            return total + cartItem.price;
+          }, 0)}{' '}
+          kr
+        </div>
+        <div className={styles['to-register-btn']}>
+          <NavLink to={`/register`}>
+            <button>Till betalning</button>
+          </NavLink>
+        </div>
       </div>
     </>
   );
