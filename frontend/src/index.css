@@ -22,11 +22,12 @@ a {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -49,16 +50,18 @@ h5 {
 }
 
 button {
+  background-color: black;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: rgb(135, 177, 239);
 }
@@ -69,7 +72,7 @@ button:focus-visible {
 
 main {
   margin-bottom: 4em;
-  padding: 2em 2em;
+  padding: 2em 0em;
 }
 
 footer {
@@ -80,7 +83,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   font-size: 12px;
@@ -106,5 +109,11 @@ footer {
 
   .arrow {
     color: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-item {
+    width: 300px;
   }
 }

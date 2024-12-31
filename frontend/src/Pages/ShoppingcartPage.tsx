@@ -16,7 +16,7 @@ export const ShoppingcartPage = () => {
 
   return (
     <>
-      <h2>Varukorg</h2>
+      <h3>Varukorg</h3>
       <ShoppingcartList cartItems={cartItems} />
     </>
   );

@@ -2,20 +2,30 @@ import { NavLink } from 'react-router-dom';
 import { IArtwork } from '../Models/IArtwork';
 import styles from './ShoppingcartList.module.css';
 import { ShoppingcartListItem } from './ShoppingcartListItem';
-interface ShoppingcartListProps {
-  cartItems: IArtwork[];
-}
+import { useEffect, useState } from 'react';
 
-export const ShoppingcartList = ({ cartItems }: ShoppingcartListProps) => {
+export const ShoppingcartList = ({ cartItems }: { cartItems: IArtwork[] }) => {
+  const [currentCartItems, setCurrentCartItems] = useState<IArtwork[]>(
+    cartItems || []
+  );
+
+  useEffect(() => {
+    setCurrentCartItems(cartItems);
+  }, [cartItems]);
+
   return (
     <>
       <div className={styles['cart-list']}>
-        {cartItems?.map((cartItem, i) => (
-          <ShoppingcartListItem key={i} cartItem={cartItem} />
+        {currentCartItems?.map((cartItem, i) => (
+          <ShoppingcartListItem
+            key={i}
+            cartItem={cartItem}
+            setCurrentCartItems={setCurrentCartItems}
+          />
         ))}
         <div className={styles['cart-sum']}>
           Summa:{' '}
-          {cartItems?.reduce((total, cartItem) => {
+          {currentCartItems?.reduce((total, cartItem) => {
             return total + cartItem.price;
           }, 0)}{' '}
           kr
