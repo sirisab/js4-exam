@@ -16,7 +16,7 @@
   }
 }
 
-.badge:after {
+/* .badge:after {
   content: attr(value);
   font-size: 12px;
   color: #fff;
@@ -27,4 +27,4 @@
   left: -8px;
   top: -10px;
   opacity: 0.9;
-}
+} */

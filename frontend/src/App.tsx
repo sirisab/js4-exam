@@ -11,6 +11,7 @@ import { ArtworksPage } from './Pages/ArtworksPage';
 import { ArtworkPage } from './Pages/ArtworkPage';
 import NotFoundPage from './Pages/NotFoundPage';
 import { ShoppingcartPage } from './Pages/ShoppingcartPage';
+import { RegisterPage } from './Pages/RegisterPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path='/artworks' element={<ArtworksPage />} />
       <Route path='/artworks/:id' element={<ArtworkPage />} />
       <Route path='/shoppingcart' element={<ShoppingcartPage />} />
+      <Route path='/register' element={<RegisterPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Route>
   )

@@ -26,21 +26,12 @@ const ArtworkDetails = ({ artwork }: { artwork: IArtwork }) => {
 
   return (
     <>
-      <section className={styles.details}>
+      <div className={styles.details}>
         <img
           src={`http://localhost:5173/drawings/${artwork?.imageUrlLarge}`}
           alt={artwork?.title}
           className={styles['details-image']}
         />
-
-        <div className={styles['details-info']}>
-          <h3>{artwork?.title}</h3>
-          <p>{artwork?.description}</p>
-          <p>{artwork?.dimensions}</p>
-          <p>{artwork?.price} kr</p>
-          <p>{artwork?.inStock} i lager</p>
-          <button onClick={handleClick}>Lägg i varukorgen</button>
-        </div>
 
         <div className={styles['arrows-div']}>
           {artwork?.id > 1 && (
@@ -55,7 +46,16 @@ const ArtworkDetails = ({ artwork }: { artwork: IArtwork }) => {
             </NavLink>
           )}
         </div>
-      </section>
+
+        <div className={styles['details-info']}>
+          <h3>{artwork?.title}</h3>
+          <p>{artwork?.description}</p>
+          <p>{artwork?.dimensions}</p>
+          <p>{artwork?.price} kr</p>
+          <p>{artwork?.inStock} i lager</p>
+          <button onClick={handleClick}>Lägg i varukorgen</button>
+        </div>
+      </div>
     </>
   );
 };

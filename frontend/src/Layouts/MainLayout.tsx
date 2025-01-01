@@ -4,7 +4,7 @@ import Footer from '../Components/UI/Footer';
 
 const MainLayout = () => {
   return (
-    <>
+    <div id='root2'>
       <Navbar />
       <main>
         <section>
@@ -12,7 +12,7 @@ const MainLayout = () => {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 export default MainLayout;

@@ -13,6 +13,10 @@ export const ShoppingcartList = ({ cartItems }: { cartItems: IArtwork[] }) => {
     setCurrentCartItems(cartItems);
   }, [cartItems]);
 
+  const regExFormat = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  };
+
   return (
     <>
       <div className={styles['cart-list']}>
@@ -25,9 +29,11 @@ export const ShoppingcartList = ({ cartItems }: { cartItems: IArtwork[] }) => {
         ))}
         <div className={styles['cart-sum']}>
           Summa:{' '}
-          {currentCartItems?.reduce((total, cartItem) => {
-            return total + cartItem.price;
-          }, 0)}{' '}
+          {regExFormat(
+            currentCartItems?.reduce((total, cartItem) => {
+              return total + cartItem.price;
+            }, 0)
+          )}{' '}
           kr
         </div>
         <div className={styles['to-register-btn']}>

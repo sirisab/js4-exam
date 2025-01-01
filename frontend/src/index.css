@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cutive+Mono&family=Darumadrop+One&family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Palette+Mosaic&family=Rubik+Puddles&family=Shippori+Antique+B1&display=swap');
 
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,6 +34,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   position: relative;
+  height: 100%;
 }
 
 h1 {
@@ -43,6 +50,7 @@ h2 {
 h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
+  margin: 0.2em 0em;
 }
 
 h5 {
@@ -71,21 +79,17 @@ button:focus-visible {
 }
 
 main {
-  margin-bottom: 4em;
-  padding: 2em 0em;
+  padding: 1em 0em;
+  flex: 1;
 }
 
 footer {
-  height: 40px;
-  width: 100%;
+  padding: 1em;
   background-color: rgb(135, 177, 239);
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   font-size: 12px;
 }
 
