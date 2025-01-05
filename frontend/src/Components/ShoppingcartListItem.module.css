@@ -22,6 +22,6 @@
 @media only screen and (max-width: 600px) {
   cart-item {
     width: 300px;
-    gap: 1em;
+    gap: 0em;
   }
 }

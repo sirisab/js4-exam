@@ -1,50 +1,6 @@
 {
   "shoppingcart": [
     {
-      "id": "3",
-      "title": "Gula knoppar",
-      "price": 2500,
-      "description": "Pan Pastel & torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210512a_small.JPG",
-      "imageUrlLarge": "210512a.JPG",
-      "imageUrlThumbnail": "210512a_thumbnail.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "4",
-      "title": "Persienn",
-      "price": 2500,
-      "description": "Torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210512b_small.JPG",
-      "imageUrlLarge": "210512b.JPG",
-      "imageUrlThumbnail": "210512b_thumbnail.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "1",
-      "title": "Rosa droppar",
-      "price": 2500,
-      "description": "Torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "201230_small.JPG",
-      "imageUrlLarge": "201230.JPG",
-      "imageUrlThumbnail": "201230_thumbnail.JPG",
-      "inStock": 1
-    },
-    {
-      "id": "2",
-      "title": "Janne, min vän",
-      "price": 2500,
-      "description": "Pan Pastel och torrpastell",
-      "dimensions": "15 x 15 cm",
-      "imageUrlSmall": "210428_small.JPG",
-      "imageUrlLarge": "210428.JPG",
-      "imageUrlThumbnail": "210428_thumbnail.JPG",
-      "inStock": 1
-    },
-    {
       "id": "1",
       "title": "Rosa droppar",
       "price": 2500,

@@ -17,3 +17,10 @@
 .to-register-btn {
   align-self: end;
 }
+
+@media only screen and (max-width: 600px) {
+  cart-list {
+    width: 300px;
+    gap: 0em;
+  }
+}
