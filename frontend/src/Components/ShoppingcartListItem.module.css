@@ -1,5 +1,5 @@
 .cart-item {
-  width: 100%;
+  width: 25em;
   display: flex;
   align-items: center;
   gap: 2em;
@@ -20,8 +20,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-  cart-item {
-    width: 300px;
-    gap: 0em;
+  .cart-item {
+    width: 20em;
+    gap: 1em;
+    button {
+      margin: 0px;
+      padding: 0px;
+    }
   }
 }

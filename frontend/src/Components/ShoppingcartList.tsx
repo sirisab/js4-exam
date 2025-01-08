@@ -4,7 +4,13 @@ import styles from './ShoppingcartList.module.css';
 import { ShoppingcartListItem } from './ShoppingcartListItem';
 import { useEffect, useState } from 'react';
 
-export const ShoppingcartList = ({ cartItems }: { cartItems: IArtwork[] }) => {
+export const ShoppingcartList = ({
+  cartItems,
+  updateCartBadge,
+}: {
+  cartItems: IArtwork[];
+  updateCartBadge: () => void;
+}) => {
   const [currentCartItems, setCurrentCartItems] = useState<IArtwork[]>(
     cartItems || []
   );
@@ -13,7 +19,7 @@ export const ShoppingcartList = ({ cartItems }: { cartItems: IArtwork[] }) => {
     setCurrentCartItems(cartItems);
   }, [cartItems]);
 
-  const regExFormat = (number) => {
+  const regExFormat = (number: number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   };
 
@@ -25,22 +31,32 @@ export const ShoppingcartList = ({ cartItems }: { cartItems: IArtwork[] }) => {
             key={i}
             cartItem={cartItem}
             setCurrentCartItems={setCurrentCartItems}
+            updateCartBadge={updateCartBadge}
           />
         ))}
-        <div className={styles['cart-sum']}>
-          Summa:{' '}
-          {regExFormat(
-            currentCartItems?.reduce((total, cartItem) => {
-              return total + cartItem.price;
-            }, 0)
-          )}{' '}
-          kr
-        </div>
-        <div className={styles['to-register-btn']}>
-          <NavLink to={`/register`}>
-            <button>Till betalning</button>
-          </NavLink>
-        </div>
+        {currentCartItems.length > 0 ? (
+          <>
+            <div className={styles['cart-sum']}>
+              Summa:{' '}
+              {regExFormat(
+                currentCartItems?.reduce((total, cartItem) => {
+                  return total + cartItem.price;
+                }, 0)
+              )}{' '}
+              kr
+            </div>
+            <div className={styles['to-register-btn']}>
+              <NavLink to={`/register`}>
+                <button>Till betalning</button>
+              </NavLink>
+            </div>
+          </>
+        ) : (
+          <p>
+            Här är det tomt!{' '}
+            <NavLink to='/artworks'>Återvänd till pastellerna.</NavLink>
+          </p>
+        )}
       </div>
     </>
   );

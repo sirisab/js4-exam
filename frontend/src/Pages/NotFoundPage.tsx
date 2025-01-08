@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NotFoundPage = () => {
   return (
@@ -6,7 +6,7 @@ const NotFoundPage = () => {
       <h3>Något gick fel!</h3>
       <p>
         OJ! Något gick fel.{' '}
-        <Link to='/artworks'>Återvänd till pastellerna.</Link>
+        <NavLink to='/artworks'>Återvänd till pastellerna.</NavLink>
       </p>
     </div>
   );

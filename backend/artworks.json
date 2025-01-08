@@ -1,6 +1,28 @@
 {
   "shoppingcart": [
     {
+      "id": "9",
+      "title": "Nattblad",
+      "price": 4000,
+      "description": "Pan Pastel",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "210923b_small.JPG",
+      "imageUrlLarge": "210923b.JPG",
+      "imageUrlThumbnail": "210923b_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "8",
+      "title": "Utsikt",
+      "price": 2500,
+      "description": "Torrpastell",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "210602_small.JPG",
+      "imageUrlLarge": "210602.JPG",
+      "imageUrlThumbnail": "210602_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
       "id": "1",
       "title": "Rosa droppar",
       "price": 2500,
@@ -9,6 +31,17 @@
       "imageUrlSmall": "201230_small.JPG",
       "imageUrlLarge": "201230.JPG",
       "imageUrlThumbnail": "201230_thumbnail.JPG",
+      "inStock": 1
+    },
+    {
+      "id": "7",
+      "title": "Skymningsspegling",
+      "price": 4000,
+      "description": "Torrpastell",
+      "dimensions": "25 x 25 cm",
+      "imageUrlSmall": "210518_small.JPG",
+      "imageUrlLarge": "210518.JPG",
+      "imageUrlThumbnail": "210518_thumbnail.JPG",
       "inStock": 1
     }
   ],

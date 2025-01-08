@@ -1,29 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css';
 import { HiMiniShoppingBag } from 'react-icons/hi2';
-import { LoadArtworks } from '../../Utilities/LoadArtworks';
-import { ShoppingcartList } from '../ShoppingcartList';
-import { useEffect, useState } from 'react';
-import { IArtwork } from '../../Models/IArtwork';
 
-const Navbar = () => {
-  const [itemCount, setItemCount] = useState(0);
-
-  const updateCartBadge = async () => {
-    const data = await LoadArtworks('/shoppingcart');
-    console.log('Polling data:', data); // Logga data för att se vad som hämtas
-
-    setItemCount(data.length);
-  };
-
-  useEffect(() => {
-    updateCartBadge();
-
-    const interval = setInterval(updateCartBadge, 10000);
-
-    return () => clearInterval(interval);
-  }, ['/shoppingcart']);
-
+const Navbar = ({ itemCount }: { itemCount: number }) => {
   return (
     <nav className={styles.navbar}>
       <div>

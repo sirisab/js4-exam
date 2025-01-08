@@ -8,9 +8,9 @@
 .details {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 2em;
-  min-height: 100%;
+  min-height: 31em;
   margin: 2em;
 
   .details-image {
@@ -58,6 +58,7 @@
 
     .arrows-div {
       align-self: start;
+      order: 3;
     }
   }
 }
