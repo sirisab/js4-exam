@@ -24,7 +24,6 @@ const ArtworkDetails = ({
   const postToCart = (item: IArtwork) => {
     PostToShoppingcart(item);
   };
-  console.log('updateCartBadge:', updateCartBadge);
   return (
     <>
       <div className={styles.details}>

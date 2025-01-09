@@ -2,9 +2,6 @@ import { fetchData } from '../utilities/httpClient.mjs';
 
 export const addToShoppingcart = async (req, res) => {
   try {
-    console.log('POST request received at /api/shoppingcart');
-    console.log('Request body:', req.body);
-
     const newArticle = req.body;
 
     const response = await fetchData('shoppingcart', {
@@ -15,7 +12,6 @@ export const addToShoppingcart = async (req, res) => {
       body: JSON.stringify(newArticle),
     });
 
-    console.log('Response from external API:', response);
     res.status(201).json({
       success: true,
       message: 'Item added to shopping cart',
@@ -29,11 +25,8 @@ export const addToShoppingcart = async (req, res) => {
 };
 
 export const deleteFromShoppingcart = async (req, res) => {
-  console.log('DELETE-begäran mottagen på /api/shoppingcart');
-
   const { id } = req.params;
   const parsedId = parseInt(id, 10);
-  console.log('Mottaget ID:', id);
 
   if (isNaN(id)) {
     return res.status(400).json({ success: false, message: 'Invalid ID' });

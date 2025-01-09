@@ -43,6 +43,17 @@
       "imageUrlLarge": "210518.JPG",
       "imageUrlThumbnail": "210518_thumbnail.JPG",
       "inStock": 1
+    },
+    {
+      "id": "1",
+      "title": "Rosa droppar",
+      "price": 2500,
+      "description": "Torrpastell",
+      "dimensions": "15 x 15 cm",
+      "imageUrlSmall": "201230_small.JPG",
+      "imageUrlLarge": "201230.JPG",
+      "imageUrlThumbnail": "201230_thumbnail.JPG",
+      "inStock": 1
     }
   ],
   "artworks": [

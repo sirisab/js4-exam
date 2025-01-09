@@ -1,5 +1,4 @@
 .cart-item {
-  width: 25em;
   display: flex;
   align-items: center;
   gap: 2em;
@@ -7,21 +6,24 @@
   button {
     color: red;
     background-color: transparent;
+    justify-self: flex-end;
   }
 }
 
 .cart-title {
-  width: 8rem;
+  width: 10em;
   text-align: left;
 }
 
 .cart-price {
+  width: 14em;
   text-align: right;
 }
 
 @media only screen and (max-width: 600px) {
   .cart-item {
-    width: 20em;
+    width: 25em;
+    font-size: 0.9em;
     gap: 1em;
     button {
       margin: 0px;

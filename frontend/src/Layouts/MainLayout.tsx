@@ -9,7 +9,6 @@ const MainLayout = () => {
 
   const updateCartBadge = async () => {
     const data = await LoadArtworks('/shoppingcart');
-    console.log('Polling data:', data); // Logga data för att se vad som hämtas
 
     setItemCount(data.length);
   };

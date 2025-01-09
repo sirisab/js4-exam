@@ -11,7 +11,7 @@ export const fetchData = async (endpoint, options = {}) => {
     const response = await fetch(url, options);
 
     if (!response.ok) {
-      console.log(
+      console.error(
         `Error in fetchData: ${response.status} ${response.statusText}`
       );
 

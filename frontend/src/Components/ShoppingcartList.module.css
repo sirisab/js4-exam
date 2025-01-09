@@ -1,5 +1,5 @@
 .cart-list {
-  width: 300px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -8,19 +8,12 @@
 }
 
 .cart-sum {
-  width: 300px;
-  padding: 2em 1em;
+  width: 100%;
+  padding: 2em 0em;
   text-align: right;
   margin: 0 auto;
 }
 
 .to-register-btn {
   align-self: end;
-}
-
-@media only screen and (max-width: 600px) {
-  cart-list {
-    width: 300px;
-    gap: 0em;
-  }
 }

@@ -12,8 +12,6 @@ export const ShoppingcartPage = () => {
   const { updateCartBadge } = useOutletContext<OutletContextType>();
   const [cartItems, setCartItems] = useState<IArtwork[]>([]);
 
-  console.log('updateCartBadge:', updateCartBadge);
-
   useEffect(() => {
     loadCartItems();
   }, []);

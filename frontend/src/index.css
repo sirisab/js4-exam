@@ -58,7 +58,9 @@ h5 {
 }
 
 button {
-  background-color: black;
+  background-color: rgb(192, 165, 232);
+  color: black;
+
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -93,21 +95,12 @@ footer {
   font-size: 12px;
 }
 
-.arrow {
-  color: white;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #edebeb;
   }
   a {
-    color: black;
-  }
-
-  button {
-    background-color: #dcbbf2;
     color: black;
   }
 

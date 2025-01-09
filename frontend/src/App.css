@@ -9,7 +9,23 @@
 }
 
 .shoppingCartContainer {
-  width: 20em;
-  text-align: left;
+  width: 30em;
   margin: 0 auto;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.arrow {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .shoppingCartContainer {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    h3 {
+      text-align: left;
+    }
+  }
 }
