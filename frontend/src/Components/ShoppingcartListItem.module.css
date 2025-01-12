@@ -1,7 +1,8 @@
 .cart-item {
   display: flex;
+  gap: 1em;
   align-items: center;
-  gap: 2em;
+  align-self: start;
 
   button {
     color: red;
@@ -16,7 +17,7 @@
 }
 
 .cart-price {
-  width: 14em;
+  width: 8em;
   text-align: right;
 }
 
@@ -25,9 +26,22 @@
     width: 25em;
     font-size: 0.9em;
     gap: 1em;
+    margin: 0 auto;
+    display: flex;
+
     button {
       margin: 0px;
       padding: 0px;
+    }
+
+    .cart-title {
+      width: 6em;
+      text-align: left;
+    }
+
+    .cart-price {
+      width: 4.5em;
+      align-self: right;
     }
   }
 }

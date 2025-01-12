@@ -50,7 +50,8 @@ h2 {
 h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 1.4em;
-  margin: 1em 0em;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
 }
 
 h5 {
@@ -81,8 +82,8 @@ button:focus-visible {
 }
 
 main {
-  padding: 1em 0em;
-  flex: 1;
+  padding: 3em 0em;
+  margin: 0 auto;
 }
 
 footer {
@@ -93,6 +94,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 12px;
+  margin-top: auto;
 }
 
 @media (prefers-color-scheme: light) {
@@ -106,11 +108,5 @@ footer {
 
   .arrow {
     color: black;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .cart-item {
-    width: 300px;
   }
 }

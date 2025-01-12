@@ -12,10 +12,10 @@ const ArtworkDetails = ({
   artwork: IArtwork;
   updateCartBadge: () => void;
 }) => {
-  const handleClick = async () => {
+  const handleClick = () => {
     try {
       postToCart(artwork);
-      await updateCartBadge();
+      updateCartBadge();
     } catch (error) {
       console.error('Misslyckades med att uppdatera badgen:', error);
     }
@@ -24,6 +24,7 @@ const ArtworkDetails = ({
   const postToCart = (item: IArtwork) => {
     PostToShoppingcart(item);
   };
+
   return (
     <>
       <div className={styles.details}>
@@ -52,7 +53,9 @@ const ArtworkDetails = ({
           <p>{artwork?.dimensions}</p>
           <p>{artwork?.price} kr</p>
           <p>{artwork?.inStock} i lager</p>
-          <button onClick={handleClick}>Lägg i varukorgen</button>
+          <button className={styles['add-to-cart-btn']} onClick={handleClick}>
+            Lägg i varukorgen
+          </button>
         </div>
       </div>
     </>

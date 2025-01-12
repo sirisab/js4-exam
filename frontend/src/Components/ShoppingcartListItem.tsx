@@ -28,9 +28,20 @@ export const ShoppingcartListItem = ({
     }
   };
 
+  const regExFormat = (number: number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  };
+
   return (
     <>
       <div key={cartItem?.id} className={styles['cart-item']}>
+        <button
+          type='button'
+          className={styles['delete-btn']}
+          onClick={() => handleClick(cartItem.id)}
+        >
+          <FaTrash size='16px' color='red' />
+        </button>
         <ImageLink
           href={`/artworks/${cartItem.id}`}
           imageSrc={`http://localhost:5173/drawings/${cartItem.imageUrlThumbnail}`}
@@ -39,15 +50,10 @@ export const ShoppingcartListItem = ({
         <div className={styles['cart-title']}>
           <NavLink to={`/artworks/${cartItem.id}`}>{cartItem?.title}</NavLink>{' '}
         </div>
-        <div className={styles['cart-price']}>{cartItem?.price} kr</div>
-
-        <button
-          type='button'
-          className='styles[delete-btn]'
-          onClick={() => handleClick(cartItem.id)}
-        >
-          <FaTrash size='16px' color='red' />
-        </button>
+        <div className={styles['cart-price']}>
+          {' '}
+          {regExFormat(cartItem?.price)} kr
+        </div>
       </div>
     </>
   );
