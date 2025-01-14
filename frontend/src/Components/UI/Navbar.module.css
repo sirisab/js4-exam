@@ -5,11 +5,7 @@
   justify-content: space-between;
   align-items: baseline;
   padding: 0em 2em;
-  margin: 0px;
-
-  a {
-    color: black;
-  }
+  color: black;
 
   a:visited {
     color: #242424;

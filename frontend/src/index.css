@@ -31,10 +31,9 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  min-height: 100vh;
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -56,6 +55,10 @@ h3 {
 
 h5 {
   margin: 0.1rem;
+}
+
+p {
+  margin: 0.5rem 0rem;
 }
 
 button {
@@ -87,7 +90,7 @@ main {
 }
 
 footer {
-  padding: 1em;
+  padding: 1em 0em;
   background-color: rgb(135, 177, 239);
   color: black;
   display: flex;
@@ -95,6 +98,7 @@ footer {
   justify-content: center;
   font-size: 12px;
   margin-top: auto;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: light) {
@@ -103,10 +107,6 @@ footer {
     background-color: #edebeb;
   }
   a {
-    color: black;
-  }
-
-  .arrow {
     color: black;
   }
 }

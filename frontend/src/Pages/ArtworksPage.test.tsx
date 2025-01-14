@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
 // import userEvent from '@testing-library/user-event';
 import { ArtworksPage } from './ArtworksPage';
+import { MemoryRouter } from 'react-router-dom';
 
 // Describe beskriver testets syfte
 // Steg 1. Skapa en testsvit:
@@ -9,7 +10,11 @@ import { ArtworksPage } from './ArtworksPage';
 //Instansierar Artworks-komponenten
 
 beforeEach(() => {
-  render(<ArtworksPage />);
+  render(
+    <MemoryRouter>
+      <ArtworksPage />
+    </MemoryRouter>
+  );
 });
 
 describe('ArtworksPage component', () => {
@@ -33,7 +38,7 @@ describe('ArtworksPage component', () => {
   describe('ArtworksPage REST API call', () => {
     it('should display image for each artwork', async () => {
       const images = await screen.findAllByRole('img');
-      expect(images).toHaveLength(8);
+      expect(images).toHaveLength(10);
 
       const altTitles = images.map((elem) => (elem as HTMLImageElement).alt);
       expect(altTitles).toEqual([
@@ -43,8 +48,10 @@ describe('ArtworksPage component', () => {
         'Persienn',
         'Arbetsfordon',
         'Arbetsborste',
-        'Skymningsspegling',
+        'Orange spegling',
         'Utsikt',
+        'Nattblad',
+        'Gul fasad',
       ]);
     });
   });

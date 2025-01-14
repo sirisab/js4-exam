@@ -1,7 +1,7 @@
 .details {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 2em;
   min-height: 31em;
   margin: 0 auto;

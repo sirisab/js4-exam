@@ -12,15 +12,29 @@
   margin: 0 auto;
   padding: 1rem 0rem;
   border-top: white 1px solid;
-  width: 100%;
+  width: 28.5em;
 }
 
 .to-register-btn {
-  align-self: end;
+  text-align: right;
+  margin: 0 2rem auto;
+  padding: 1rem 0rem;
+  width: 15.5em;
 }
 
 @media only screen and (max-width: 600px) {
   .cart-sum {
-    font-size: 0.9em;
+    text-align: right;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    border-top: white 1px solid;
+    width: 15.5em;
+  }
+
+  .to-register-btn {
+    text-align: right;
+    margin: 0 2rem auto;
+    padding: 1rem 0rem;
+    width: 15.5em;
   }
 }

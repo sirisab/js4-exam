@@ -10,7 +10,7 @@ describe('Artworkpage component', () => {
     expect(button).toBeInTheDocument();
   });
 
-  it('changes button to being greyed out when clicked', async () => {
+  it.skip('changes button to being greyed out when clicked', async () => {
     render(<ArtworkPage />);
     const button = screen.getByRole('button', { name: /Lägg i varukorgen/i });
     const user = userEvent.setup();

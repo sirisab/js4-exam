@@ -17,8 +17,12 @@ export const ArtworkPage = () => {
 
   useEffect(() => {
     const getArtwork = async () => {
-      const found = await FindArtwork(`/artworks/${id}`);
-      setArtwork(found);
+      try {
+        const found = await FindArtwork(`/artworks/${id}`);
+        setArtwork(found);
+      } catch (error) {
+        console.error('Failed to fetch artwork:', error);
+      }
     };
     getArtwork();
   }, [id]);

@@ -4,6 +4,10 @@ import Footer from '../Components/UI/Footer';
 import { useEffect, useState } from 'react';
 import { LoadArtworks } from '../Utilities/LoadArtworks';
 
+export interface OutletContextType {
+  updateCartBadge: () => void;
+}
+
 const MainLayout = () => {
   const [itemCount, setItemCount] = useState(0);
 

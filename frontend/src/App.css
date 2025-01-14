@@ -17,10 +17,15 @@
   box-sizing: border-box;
 }
 
-.arrow {
-  color: white;
+.not-found-container {
+  width: 80%;
 }
 
+.register-container {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
 @media only screen and (max-width: 600px) {
   .shoppingCartContainer {
     h3 {
