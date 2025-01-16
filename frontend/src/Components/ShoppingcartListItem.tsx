@@ -44,7 +44,7 @@ export const ShoppingcartListItem = ({
         </button>
         <ImageLink
           href={`/artworks/${cartItem.id}`}
-          imageSrc={`http://localhost:5173/drawings/${cartItem.imageUrlThumbnail}`}
+          imageSrc={`../drawings/${cartItem.imageUrlThumbnail}`}
           altText={cartItem.title}
         />
         <div className={styles['cart-title']}>

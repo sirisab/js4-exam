@@ -29,7 +29,7 @@ const ArtworkDetails = ({
     <>
       <div className={styles.details}>
         <img
-          src={`http://localhost:5173/drawings/${artwork?.imageUrlLarge}`}
+          src={`../drawings/${artwork?.imageUrlLarge}`}
           alt={artwork?.title}
           className={styles['details-image']}
         />
