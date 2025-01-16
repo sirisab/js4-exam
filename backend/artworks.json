@@ -10,6 +10,28 @@
       "imageUrlLarge": "201230.JPG",
       "imageUrlThumbnail": "201230_thumbnail.JPG",
       "inStock": 1
+    },
+    {
+      "id": "8228"
+    },
+    {
+      "id": "2c9a"
+    },
+    {
+      "id": "b4c2"
+    },
+    {
+      "id": "e103"
+    },
+    {
+      "id": "f0dd"
+    },
+    {
+      "id": "1",
+      "title": "Beautiful Artwork",
+      "price": 500,
+      "description": "A wonderful piece of art.",
+      "imageUrl": "https://example.com/artwork.jpg"
     }
   ],
   "artworks": [
